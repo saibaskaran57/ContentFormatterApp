@@ -1,6 +1,6 @@
 # ContentFormatterApp
 
-Sample request/response for different content formats(e.g. JSON,XML and MessagePack)
+An application that provides different types of content-negotiation using .NET Core 2.0. Below are an example of request/response for different content formats(e.g. JSON,XML and MessagePack).
 
 Request Headers
 ------------------------
