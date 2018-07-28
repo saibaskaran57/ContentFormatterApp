@@ -10,6 +10,7 @@
             builder.AddMvcOptions(options =>
             {
                 options.InputFormatters.RemoveType<Microsoft.AspNetCore.Mvc.Formatters.JsonInputFormatter>();
+                options.InputFormatters.RemoveType<Microsoft.AspNetCore.Mvc.Formatters.JsonPatchInputFormatter>();
                 options.OutputFormatters.RemoveType<Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter>();
 
                 options.InputFormatters.Add(new Utf8JsonInputFormatter());
