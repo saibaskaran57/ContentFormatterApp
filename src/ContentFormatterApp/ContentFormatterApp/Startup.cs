@@ -1,10 +1,10 @@
 ﻿namespace ContentFormatterApp
 {
+    using ContentFormatterApp.Extension;
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
-    using WebApiContrib.Core.Formatter.MessagePack;
 
     public class Startup
     {
@@ -22,11 +22,12 @@
                 .AddMvc(options =>
                 {
                     options.RespectBrowserAcceptHeader = true;
+                    options.ReturnHttpNotAcceptable = true;
                 })
-                .AddXmlSerializerFormatters()
+                .AddUtf8JsonFormatters()
+                .AddXmlDataContractSerializerFormatters()
                 .AddMessagePackFormatters();
         }
-
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {

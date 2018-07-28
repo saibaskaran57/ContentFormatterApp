@@ -10,10 +10,9 @@
 
   <ItemGroup>
     <PackageReference Include="MessagePack" Version="1.7.3.4" />
-    <PackageReference Include="MessagePack.AspNetCoreMvcFormatter" Version="1.7.3.4" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Formatters.Xml" Version="2.0.0" />
-    <PackageReference Include="WebApiContrib.Core.Formatter.MessagePack" Version="2.0.0" />
+    <PackageReference Include="Utf8Json" Version="1.3.7" />
   </ItemGroup>
 
   <ItemGroup>
