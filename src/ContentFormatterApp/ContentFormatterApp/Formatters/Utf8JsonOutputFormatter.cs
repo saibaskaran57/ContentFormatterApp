@@ -8,10 +8,10 @@
 
     public class Utf8JsonOutputFormatter : TextOutputFormatter
     {
-        const string ContentType = "application/json";
-        static readonly string[] SupportedContentTypes = new[] { ContentType };
+        private const string ContentType = "application/json";
+        private static readonly string[] SupportedContentTypes = new[] { ContentType };
 
-        readonly IJsonFormatterResolver resolver;
+        private readonly IJsonFormatterResolver resolver;
 
         public Utf8JsonOutputFormatter()
             : this(null)

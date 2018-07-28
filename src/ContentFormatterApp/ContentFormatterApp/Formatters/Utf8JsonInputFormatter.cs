@@ -11,7 +11,7 @@
         private const string ContentType = "application/json";
         private static readonly string[] SupportedContentTypes = new[] { ContentType };
 
-        readonly IJsonFormatterResolver resolver;
+        private readonly IJsonFormatterResolver resolver;
 
         public Utf8JsonInputFormatter()
             : this(null)

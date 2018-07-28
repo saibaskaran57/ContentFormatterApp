@@ -11,7 +11,7 @@
         private const string ContentType = "application/x-msgpack";
         private static readonly string[] SupportedContentTypes = new[] { ContentType };
 
-        readonly IFormatterResolver resolver;
+        private readonly IFormatterResolver resolver;
 
         public MessagePackInputFormatter()
             : this(null)
