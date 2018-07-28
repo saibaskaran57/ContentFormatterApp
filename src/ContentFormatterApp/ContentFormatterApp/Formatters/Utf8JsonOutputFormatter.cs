@@ -6,7 +6,7 @@
     using System.Threading.Tasks;
     using Utf8Json;
 
-    public class Utf8JsonOutputFormatter : TextOutputFormatter
+    public sealed class Utf8JsonOutputFormatter : TextOutputFormatter
     {
         private const string ContentType = "application/json";
         private static readonly string[] SupportedContentTypes = new[] { ContentType };
