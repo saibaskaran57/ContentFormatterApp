@@ -1,6 +1,6 @@
 ﻿namespace ContentFormatterApp
 {
-    using ContentFormatterApp.Extension;
+    using ContentFormatterApp.Extensions;
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.Extensions.Configuration;
